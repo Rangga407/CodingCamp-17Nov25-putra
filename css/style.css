@@ -1,0 +1,373 @@
+/* Warna header dan border bawah */
+.header-div {
+   background-color: #121212;
+   color: white;
+   border-bottom: 1px solid #ff7300; 
+  
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #0a0a0a, #ff7300, #0a0a0a) 1;
+}
+
+/* Section Header untuk message us */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Section Title untuk portofolio dan message us */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* Navbar home, our profile, portofolio, message us */
+.nav-button {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 5px; 
+    color: white; 
+    text-decoration: none;
+    margin-left: 10px;  
+    
+    transition: all 0.3s ease;
+}
+
+/* Hover effect untuk navbar */
+.nav-button:hover {
+    background-color: #ff7300; 
+    border-color: #ff7300;
+    color: white;
+    
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.4);
+}
+
+/* Bagian Home - START */
+.homecolorbg {
+  height: 100px;
+  background-color: #0a0a0a;
+
+  background-image: radial-gradient(
+    circle at bottom left, 
+    rgba(255, 115, 0, 0.25) 0%,
+    transparent 60%
+  );
+
+  color: white;
+}
+
+.neon-divider {
+  border: none;
+  height: 2px;
+  background-color: #ff7300;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(255, 115, 0, 0.8), 
+              0 0 20px rgba(255, 115, 0, 0.4);
+  
+  position: relative;
+  z-index: 10;
+}
+
+
+.neon-banner-1 {
+  height: 450px;
+  background-color: #0a0a0a;
+
+  background-image: radial-gradient(
+    circle at top left, 
+    rgba(255, 115, 0, 0.25) 0%,
+    transparent 60%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+  text-shadow: 0 0 15px rgba(255, 115, 0, 0.7);
+}
+/* Bagian Home - END */
+
+
+
+/* Bagian Profile - START */
+.profile-section {
+  padding: 80px 20px;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+}
+
+.glass-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  gap: 40px; 
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid #ff7300;
+  box-shadow: 0 0 20px rgba(255, 115, 0, 0.3);
+}
+
+.profile-text h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.text-orange {
+  color: #ff7300;
+}
+
+.profile-text p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skill-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #ff7300;
+    color: #ff7300;
+    border-radius: 50px;       
+    cursor: default;
+
+    transition: all 0.3s ease; 
+}
+
+/* Efek Hover */
+.skill-list li:hover {
+    transform: translateY(-5px);
+    background-color: #ff7300;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.4);
+}
+
+/* Bagian Profile - END */
+
+
+
+/* Bagian Portofolio - START */
+.portfolio-section {
+  padding: 80px 20px;
+  background-color: #0a0a0a;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.card-info {
+  padding: 25px;
+}
+
+.card-info h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card-info p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.view-link {
+  color: #ff7300;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Efek Hover */
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255, 115, 0, 0.2); 
+  border-color: #ff7300;
+}
+
+.portfolio-card:hover .card-image img {
+  opacity: 1;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+/* Bagian Portofolio - END */
+
+
+
+/* Bagian Message Us - START */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.section-desc {
+    color: #aaa;
+    max-width: 600px;
+    margin: 10px auto 0;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #0a0a0a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #ff7300;
+    box-shadow: 0 0 10px rgba(255, 115, 0, 0.3);
+}
+
+input[type="date"] {
+    color-scheme: dark; 
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+input[type="radio"] {
+    accent-color: #ff7300;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.neon-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #cc5c00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.neon-button:hover {
+    background-color: #ff7300;
+}
+/* Bagian Message Us - END */
+
+
+
+/* Bagian Footer - START */
+.footer-bottom {
+    background-color: #000; /* Hitam total */
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #1a1a1a;
+    color: #666;
+    font-size: 0.8rem;
+}
+/* Bagian Footer - END */

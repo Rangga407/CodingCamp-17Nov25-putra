@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <!-- Header Content -->
+    <header style ="
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        "
+        class="header-div px-10 py-5">
+
+        <div style="
+            height: 100px; 
+            width: 100px;
+            border-radius: 50%;
+            background-image: url(/assets/images/logo1.png);
+            background-size: 130%;
+            background-position: center;
+            border: 2px solid #ff7300;
+            box-shadow: 0 0 15px rgba(255, 115, 0, 0.6);">            
+        </div>
+
+        <nav justify-self="right">
+            <a class= "nav-button" href="#home-page">Home</a>
+            <a class= "nav-button" href="#profile-section">Our Profile</a>
+            <a class= "nav-button" href="#portofolio">Portofolio</a>
+            <a class= "nav-button" href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr/>
+
+
+
+    <!-- Main Content -->
+    <main>
+        <section id = "home-page" class="min-h-[100px] py-10 px-20 homecolorbg">
+            <h1 class="text-xl font-bold mb-4">Halo, <span id = "welcome"></span>, <i>welcome to website</i></h1>
+            <p class="text-lg">Ini adalah <i>website</i> latihan pertama</p>
+            
+
+        </section>
+
+        <section class="neon-banner-1 py-10 px-20">
+            <div class="banner-content">
+                <h1>Unlock Your Potential</h1>
+                <p>Bergabunglah bersama Putra untuk masa depan yang lebih cerah.</p>
+            </div>
+        </section>
+
+        <hr/ class="neon-divider">
+
+        <section id = "profile-section" class="profile-section">
+            <div class="glass-card">
+                <div class="profile-image">
+                    <img src="/assets/images/logo1.png" alt="Foto Profil">
+                </div>
+                <div class="profile-text">
+                    <h2><span class="text-orange">Putra</span></h2>
+                    <p>
+                        Kami adalah percikan api di tengah kegelapan. 
+                        Putra hadir bagi mereka yang bosan dengan hal biasa. 
+                        Dengan perpaduan strategi tajam dan desain yang memukau, 
+                        kami siap mengubah tantangan menjadi peluang emas. 
+                        Your potential is our command.
+                    </p>
+                    <ul class="skill-list">
+                        <li>Full-Stack Dev</li>
+                        <li>System Architecture</li>
+                        <li>SEO Strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr/ class="neon-divider">
+
+        <section id = "portofolio" class="portfolio-section">
+            <div>
+                <h2 class="section-title">Featured <span class="text-orange">Works</span></h2>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="card-image">
+                            <img src="assets/Images/todoList.png" alt="Project 1">
+                        </div>
+                        
+                        <div class="card-info">
+                            <h3>To-Do List</h3>
+                            <p>Membuat Aplikasi To-Do List Web </p>
+                            <a href="https://rangga407.github.io/CodingCamp-10Nov25-putra/" class="view-link">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/200/300" alt="Project 1">
+                        </div>
+                        
+                        <div class="card-info">
+                            <h3>Placeholder</h3>
+                            <p>(Minimal 2 card agar terlihat rapi) </p>
+                            <a href="https://picsum.photos/" class="view-link">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr/ class="neon-divider">
+
+        <section id="message-us" class="contact-section">
+            <header class="section-header">
+                <h2 class="section-title">Siap Membuka <span class="text-orange">Potensi Bisnismu?</span></h2>
+                <p class="section-desc">
+                    Jangan biarkan ide brilianmu terpendam dalam gelap. 
+                    Ceritakan pada kami, dan mari kita wujudkan menjadi kenyataan digital.
+                </p>
+            </header>
+
+            <form class="contact-form" onsubmit="validateform(event)">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap <span style="color: red;">*</span> </label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan namamu...">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Tanggal Lahir <span style="color: red;">*</span> </label>
+                    <input type="date" id="birth" name="birth_date">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-title">Jenis Kelamin <span style="color: red;">*</span> </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="Laki-laki"> 
+                            Laki-laki
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="Perempuan"> 
+                            Perempuan
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan / Deskripsi Proyek</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Ceritakan idemu..."></textarea>
+                </div>
+
+                <button type="submit" class="neon-button">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <hr/ class="neon-divider">
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Putra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
