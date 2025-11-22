@@ -9,6 +9,7 @@
 </head>
 <body>
     
+    <!-- Header Content -->
     <header style ="
         display: flex;
         align-items: center;
@@ -31,17 +32,20 @@
         <nav justify-self="right">
             <a class= "nav-button" href="#home-page">Home</a>
             <a class= "nav-button" href="#profile-section">Our Profile</a>
-            <a class= "nav-button" href="#">Portofolio</a>
-            <a class= "nav-button" href="#">Message Us</a>
+            <a class= "nav-button" href="#portofolio">Portofolio</a>
+            <a class= "nav-button" href="#message-us">Message Us</a>
         </nav>
     </header>
 
     <hr/>
 
+
+
+    <!-- Main Content -->
     <main>
         <section id = "home-page" class="min-h-[100px] py-10 px-20 homecolorbg">
-            <h1 class="text-xl font-bold mb-4">Halo Putra, welcome to website</h1>
-            <p class="text-lg">Ini adalah website latihan pertama</p>
+            <h1 class="text-xl font-bold mb-4">Halo, <span id = "welcome"></span>, <i>welcome to website</i></h1>
+            <p class="text-lg">Ini adalah <i>website</i> latihan pertama</p>
             
 
         </section>
@@ -80,7 +84,7 @@
 
         <hr/ class="neon-divider">
 
-        <section class="portfolio-section">
+        <section id = "portofolio" class="portfolio-section">
             <div>
                 <h2 class="section-title">Featured <span class="text-orange">Works</span></h2>
                 
@@ -123,19 +127,19 @@
                 </p>
             </header>
 
-            <form class="contact-form">
+            <form class="contact-form" onsubmit="validateform(event)">
                 <div class="form-group">
-                    <label for="name">Nama Lengkap</label>
-                    <input type="text" id="name" name="name" placeholder="Masukkan namamu..." required>
+                    <label for="name">Nama Lengkap <span style="color: red;">*</span> </label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan namamu...">
                 </div>
 
                 <div class="form-group">
-                    <label for="dob">Tanggal Lahir</label>
-                    <input type="date" id="birth" name="birth_date" required>
+                    <label for="dob">Tanggal Lahir <span style="color: red;">*</span> </label>
+                    <input type="date" id="birth" name="birth_date">
                 </div>
 
                 <div class="form-group">
-                    <label class="label-title">Jenis Kelamin</label>
+                    <label class="label-title">Jenis Kelamin <span style="color: red;">*</span> </label>
                     <div class="radio-group">
                         <label class="radio-option">
                             <input type="radio" name="gender" value="Laki-laki"> 
@@ -150,7 +154,7 @@
 
                 <div class="form-group">
                     <label for="message">Pesan / Deskripsi Proyek</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Ceritakan idemu..." required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Ceritakan idemu..."></textarea>
                 </div>
 
                 <button type="submit" class="neon-button">Kirim Pesan</button>
@@ -160,12 +164,15 @@
 
     <hr/ class="neon-divider">
 
+
+
+    <!-- Footer -->
     <footer>
         <div class="footer-bottom">
             <p>&copy; 2025 Putra. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <link rel="stylesheet" href="js/script.js"></link>
+    <script src="js/script.js"></script>
 </body>
 </html>

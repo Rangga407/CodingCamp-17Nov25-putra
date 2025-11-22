@@ -2,7 +2,10 @@
 .header-div {
    background-color: #121212;
    color: white;
-   border-bottom: 1px solid #aaa;
+   border-bottom: 1px solid #ff7300; 
+  
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #0a0a0a, #ff7300, #0a0a0a) 1;
 }
 
 /* Section Header untuk message us */
